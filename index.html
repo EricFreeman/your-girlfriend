@@ -1,0 +1,44 @@
+<head>
+	<script src="scripts/lib/angular.min.js"></script>
+	<script src="scripts/lib/jquery-1.11.1.min.js"></script>
+	<script src="scripts/lib/angular-route.min.js"></script>
+	<script src="scripts/lib/bootstrap.min.js"></script>
+	<script src="scripts/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<title>your girlfriend</title>
+</head>
+<body ng-app="mainApp">
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">your girlfriend</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse" ng-controller="HeaderController">
+				<ul class="nav navbar-nav">
+					<li ng-class="{ active: isActive('/documentation')}"><a href="#/documentation">Documentation</a></li>
+				</ul>
+			</div>
+			<a href="https://github.com/EricFreeman/your-girlfriend"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+		</div>
+	</nav>
+	<div class="container">
+		<ng-view>Loading...</ng-view>
+
+		<script type="text/ng-template" id="documentation.html">
+			<h1 class="page-header">Documentation</h1>
+
+			<p>In-memory javascript cache.  It's called your girlfriend because it will remember everything.</p>
+
+			<h4 class="page-header">How this bad boy works</h4>
+
+			<p>Require this puppy in: <code>var cache = require('./memory-cache');</code></p>
+			<p>Set stuff in the cache with whatever id you feel like: <code>cache.set('whateverYouWant' + someId, results);</code></p>
+			<p>Get stuff from the cache like this: <code>cache.get('whateverYouWant' + someId);</code></p>
+
+			<h4 class="page-header">Cache Invalidation</h4>
+			<p>To set your bullshit to invalidate after a certain time, you can include a time as an optional third parameter on <code>set</code> like this: <code>cache.set('whateverYouWant' + someId, results, new Date(new Date().getTime() + (1000 * 60 * 60)));</code>  This snippet makes the cached result invalid after an hour.</p>
+		</script>
+	</div>
+</body>

@@ -1,0 +1,23 @@
+{
+  "name": "your-girlfriend",
+  "version": "1.0.1",
+  "description": "In-memory javascript cache.  It's called your girlfriend because it will remember everything.",
+  "main": "scripts/your-girlfriend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricFreeman/your-girlfriend.git"
+  },
+  "keywords": [
+    "cache",
+    "in-memory"
+  ],
+  "author": "Eric Freeman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricFreeman/your-girlfriend/issues"
+  },
+  "homepage": "https://github.com/EricFreeman/your-girlfriend#readme"
+}

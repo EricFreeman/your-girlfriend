@@ -1,0 +1,31 @@
+{
+  "name": "your-girlfriend",
+  "description": "In-memory javascript cache.  It's called your girlfriend because it will remember everything.",
+  "main": "scripts/your-girlfriend.js",
+  "authors": [
+    "Eric Freeman"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "cache",
+    "in-memory"
+  ],
+  "homepage": "https://github.com/EricFreeman/your-girlfriend",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "scripts/lib",
+    "scripts/main.js",
+    "css",
+    "favicon.ico",
+    "index.html",
+    "README.md",
+    "package.json",
+	"bower.json",
+	".bower.json"
+  ],
+  "version": "1.0.1"
+}

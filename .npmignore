@@ -1,0 +1,9 @@
+**/scripts/lib
+**/css
+**/
+!/scripts/your-girlfriend.js
+/scripts/main.js
+bower.json
+.npmignore
+favicon.ico
+index.html
